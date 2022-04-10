@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children:  [
-             const Text("Hello", style: TextStyle(color: Colors.blue, fontSize: 40, fontWeight: FontWeight.bold)),
+             const Text("Hello", style: TextStyle(color: Colors.blue, fontSize: 50, fontWeight: FontWeight.w900, fontStyle: FontStyle.italic)),
               Text("World", style: TextStyle(color: Colors.pinkAccent.shade400, fontSize: 40, fontWeight: FontWeight.bold))
             ],
           ),
