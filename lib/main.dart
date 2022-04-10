@@ -12,7 +12,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final wordpad = WordPair.random();
-    // TODO: implement build
     return (MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'New Word: ${wordpad.asPascalCase}',
