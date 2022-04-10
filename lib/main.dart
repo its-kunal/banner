@@ -1,5 +1,6 @@
 import 'package:english_words/english_words.dart'; // Add this line.
 import 'package:flutter/material.dart';
+import "./FragmentWidget.dart";
 
 void main() {
   runApp( const MyApp());
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
     final wordpad = WordPair.random();
     // TODO: implement build
     return (MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'New Word: ${wordpad.asPascalCase}',
       home: Scaffold(
         appBar: AppBar(
@@ -25,7 +27,8 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children:  [
              const Text("Hello", style: TextStyle(color: Colors.blue, fontSize: 50, fontWeight: FontWeight.w900, fontStyle: FontStyle.italic)),
-              Text("World", style: TextStyle(color: Colors.pinkAccent.shade400, fontSize: 40, fontWeight: FontWeight.bold))
+              Text("World", style: TextStyle(color: Colors.pinkAccent.shade400, fontSize: 40, fontWeight: FontWeight.bold)),
+              const FragmentWidget()
             ],
           ),
         ),
